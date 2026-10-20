@@ -34,21 +34,27 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 
 - Before collecting anything, look in `/mnt/project-files/research/` (or `research/<brand-slug>/` in the project folder) for earlier outputs.
 - If existing research already covers the ask, say so, point to the files, and list only what is missing. Do not repeat work that is already on disk.
-- Save every new output under `/mnt/project-files/research/<brand-slug>/` (or `research/<brand-slug>/` when there is no shared folder), using the file names the `research` skill defines.
+- Save every new output in the client's research folder (`/mnt/project-files/research/<brand-slug>/`, or `research/<brand-slug>/` when there is no shared folder). If that folder doesn't exist yet, ask before creating it (section 5).
 
-## 5. Prioritise what competitors have not used
+## 5. Folders and file names
+
+- **Ask before creating any new folder.** When starting a new client, new research or anything else with no folder for it yet, ask first: "There's no folder for this yet. Shall I create one called `<name>`?" Wait for a yes. Do not create folders silently, even when the user forgot to set one up.
+- Keep each topic in **one flat folder**, with no nested sub-folders inside it.
+- Give every file a clear, labelled name that says what it is, e.g. `Phase 2 - DRIVE Strategy.md` or `Install - Research Skill.skill`. Never leave a visible file named just `SKILL.md`, `README.md` or `notes.md`.
+
+## 6. Prioritise what competitors have not used
 
 - Assume competitors already test the obvious angles. Validate every angle against their ads (OPEN / EMERGING / PROVEN / CROWDED / ABANDONED / NOT VALIDATED) and lead with OPEN and EMERGING angles and with avatars competitors do not address.
 - Every angle and avatar is backed by verbatim quotes and source links from the market.
 - Angles competitors already run are not dropped: give a take-over plan (new mechanism, new avatar, new proof, sharper words).
 
-## 6. Optional weekly trend scan
+## 7. Optional weekly trend scan
 
 - If the client wants it, set up a weekly routine that only spots **new trends in the target market**: new competitor ads, new products, rising search terms, new complaints in local forums.
 - The scan reports what is new since last week with links. It does not re-run the full research and does not generate angles unless asked.
-- Save each scan as `/mnt/project-files/research/trends/<YYYY-MM-DD>.md`.
+- Save each scan as `Trend Scan - <YYYY-MM-DD>.md` in the client's research folder (ask before creating it, per section 5).
 
-## 7. Setting up a new client project
+## 8. Setting up a new client project
 
 When asked to set up a client, collect and record:
 - client name, product and website,

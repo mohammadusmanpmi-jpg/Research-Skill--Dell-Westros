@@ -47,7 +47,7 @@ research/<brand-slug>/
   state.json              which phases are done, when, with what inputs
 ```
 
-Create the folder on first run. Slug = brand name lowercased, hyphenated.
+On first run, ask the user before creating the folder ("There's no folder for <brand> yet. Shall I create `research/<brand-slug>/`?") and wait for a yes. Slug = brand name lowercased, hyphenated.
 
 ## 2. Gating and reuse (how time is saved)
 
