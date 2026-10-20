@@ -52,7 +52,8 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 - Assume competitors already test the obvious angles. Validate every angle against their ads (OPEN / EMERGING / PROVEN / CROWDED / ABANDONED / NOT VALIDATED) and lead with OPEN and EMERGING angles and with avatars competitors do not address.
 - Every angle and avatar is backed by verbatim quotes and source links from the market.
 - Angles competitors already run are not dropped: give a take-over plan (new mechanism, new avatar, new proof, sharper words).
-- In the Angle Exploration Document, every competitor-run angle gets a takeover card: **"This angle is currently running from [competitor]"** with their exact copy, ad link, days running and who they target, then **"Here's how we dominate it"**: what we adopt, what we improve, and our ICP, mechanism, proof, format and hooks. Our mechanism and hook wording is checked against competitor phrasing (`mechanism_check.py`) so we never echo them.
+- The Angle Exploration Document **leads with open angles no competitor has tested**, most of the document, each proved by logged searches with 0 ads and built with the David Briggs methods (white-space desire, open ICP, unspoken mechanism, category reframe, objection flips, story arcs, hook frameworks).
+- After that, every competitor-run angle gets a dominate, differentiate or compete card with a full strategy (ICP, mechanism, proof, format, offer, timing): **"This angle is currently running from [competitor]"** with their exact copy, ad link, days running and who they target, then **"Here's how we dominate it"**: what we adopt, what we improve, and our ICP, mechanism, proof, format and hooks. Our mechanism and hook wording is checked against competitor phrasing (`mechanism_check.py`) so we never echo them.
 
 ## 7. Optional weekly trend scan
 
