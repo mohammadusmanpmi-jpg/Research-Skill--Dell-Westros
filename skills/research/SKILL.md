@@ -105,6 +105,7 @@ Everything downstream (frequency bands, angles, test order) is only as good as t
 - `references/phase3-angles.md` – angle exploration module.
 - `references/definitions.md` – Life Force 8, awareness levels, sophistication stages, hook types, proof types, Default Desire Trap checks. **If the user supplies their own framework, replace this file; the phases reference it by name.**
 - `references/sources.md` – every platform URL and search-page URL.
+- `references/course-playbook.md` – David Briggs course methods for every phase (review reading, extra sources, market diagnostic, mechanism build, belief pairs, persona split, hook frameworks, open loops, results diagnostics). Each phase file says which section to read.
 
 ## 6. Running a phase
 

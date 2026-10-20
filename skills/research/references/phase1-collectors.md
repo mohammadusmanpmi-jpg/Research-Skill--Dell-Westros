@@ -19,6 +19,8 @@ Fields:
 - `brand` – product/brand named in the quote, if any. `sentiment` – positive/negative/mixed for PRODUCT EXPERIENCE.
 - `cost`, `duration` – capture any "$400 later", "3 years", "6 weeks" mention as a number plus unit.
 
+Course additions (course-playbook.md § 2.3): also tag MOMENT, OBSERVER, SELF-EXCLUSION, LAPSE, REPEAT BUYER, CONSEQUENCE, TIMELINE, and record `rating` (1-5) for reviews.
+
 Rules that apply to every collector:
 - Verbatim. No paraphrase, no spelling fixes, no truncation mid-thought.
 - No URL → do not record.
@@ -112,6 +114,13 @@ Then: `python scripts/ad_matrix.py research/<brand>/01-ads.jsonl --brand "<our a
 `01-ads.md` summary: hook-type map, format map, desire map, proof map, 5 longest-running ads (advertiser, hook, format, days), our own ads audit (what we run that they don't, what they run that we don't, any red flags from 0.1).
 
 ---
+
+## Course additions – extra sources, review reading, ad teardowns
+
+Read course-playbook.md § 2 before collecting:
+- **Extra sources (§ 2.1):** customer service logs, pre-purchase questions, return reasons and post-purchase surveys (first-party: ask the client for them), repeat-buyer and "when I stopped" reviews, competitor ad comment sections, adjacent niches that share an ideology, organic viral content, and indirect competitors.
+- **Reviews (§ 2.2):** weight sampling to 2-3 (and 4) star reviews, filter logistics complaints out of 1-star, start with 100-200 per product, and look for frequency, emotion, contradictions and surprise benefits.
+- **Competitor ads (§ 2.4):** winning ad = active, 15+ (really 30+) days, several variations. Sort by longest video to find VSL/advertorial funnels. Record the teardown fields per ad and beat-break the 3 best winners.
 
 ## After all collectors
 

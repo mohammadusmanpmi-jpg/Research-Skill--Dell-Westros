@@ -14,6 +14,8 @@ If fewer sources were collected than the band thresholds assume (e.g. only Reddi
 
 No invented quotes, no paraphrase, no brand-blog content as a source. Every representative quote is copied from the jsonl with its URL.
 
+Course additions (course-playbook.md § 3): add a **Review analysis** block (top 5 emotions, expectation gap, 3 surprise benefits, 10 verbatim phrases) and a **Buyer-language bank** (10 problem phrases, 5 relief phrases, grouped by emotion, exact words with counts). Apply the finding → use table when tagging insights for Phase 3.
+
 ## Executive summary (top of document)
 1. Dominant pain (theme, count, band)
 2. Most common scene (count)

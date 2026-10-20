@@ -59,3 +59,19 @@ Ways to enter an angle a competitor already runs and make it ours:
 
 ## Angle types
 problem · solution · mechanism · identity · social proof · contrarian · story
+
+## Course additions (David Briggs) – see course-playbook.md
+
+**Hook frameworks** (with best awareness level): curiosity gap (unaware, problem-aware) · objection flip (solution-aware, skeptical) · mechanism reveal (solution-aware, stage 3+) · results statement (product-aware, sourced numbers only) · self-recognition / call-out (problem-aware, burned before) · contrarian claim (stage 4-5) · story opening (unaware, problem-aware) · direct challenge (strong-assumption audiences)
+
+**Open loop types:** unanswered question · incomplete reveal · unexpected claim · story interrupt · mechanism tease
+
+**Angle types (course list):** fear/loss · aspiration/identity · education/mechanism · social proof/authority · contrarian · comparison · story/transformation · urgency/timing
+
+**Objection strategies:** preempt (near-universal only) · reframe · outprove · ignore (non-fit people)
+
+**Mechanism types:** existing · unspoken (competitors have it, nobody named it) · transubstantiated (ordinary feature, new name or meaning; must still be a real function)
+
+**Story arcs:** against all odds · real-world desperation · discovery
+
+**Social proof hierarchy:** UGC video > UGC images > text testimonials > named buyers, specific stats, review counts, third-party tests, media mentions, visible guarantee

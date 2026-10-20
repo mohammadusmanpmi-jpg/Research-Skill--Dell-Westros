@@ -2,6 +2,14 @@
 
 Input: `02-consolidation.md`. Frameworks: `definitions.md`. Run 2.1 → 2.5 in order; each builds on the last. Every claim cites a theme + count from the consolidation; if a section has no supporting data, say "insufficient data" rather than reasoning from general knowledge.
 
+Course additions: read course-playbook.md § 4 before this phase. In short:
+- S1-S4: score scope, urgency and staying power; write the elevation lines (one per LF8 driver, tagged by awareness); add conscious vs unconscious desire; end with a one-sentence Desire Statement (§ 4.2).
+- S5 and S8: answer the six market-diagnostic questions with evidence; use the stage → lead table (§ 4.1).
+- S6: run the five-step objection diagnostic; tag each objection Preempt / Reframe / Outprove / Ignore; preempt only near-universal objections (§ 4.3).
+- S7: identity, belief system, self-narrative, plus one gut-punch line; demographics optional (§ 4.6).
+- S9-S12 and S17: mechanism of the problem + mechanism of the solution, the six-point mechanism test, a blocking-belief type, the category reframe paragraph and the positioning mode (§ 4.4-4.5).
+- S13: pick a story arc per segment (§ 4.7).
+
 ## 2.1 Discover – desire and sophistication
 
 **S1 Life Force 8 audit** – for each of the 8 desires (definitions.md): means-end chain from product to desire; score 1-5 on emotional charge, white space (vs `01-ads.md`), product credibility; cite data.

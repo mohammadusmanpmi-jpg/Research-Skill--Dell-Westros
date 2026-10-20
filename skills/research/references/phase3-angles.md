@@ -9,6 +9,8 @@ Assume competitors do research too. Any angle that is obvious from customer data
 
 Inputs: `02-consolidation.md` (required), `01-ad-matrix.md` + `01-ads.jsonl` + `01-ad-searches.md` (required for validation; if missing, every angle is flagged `NOT VALIDATED – no ad data` and the user is told to run the Ads collector), `01-competitors.md`, `02-drive.md`, `definitions.md`, `03-results.md` if present.
 
+Course additions: read course-playbook.md § 5 before this phase. Every angle cites its research insight and fills the extra angle-card fields (§ 5.1); avatars use the persona split (§ 5.2); test batches pass the creative diversity check (§ 5.3); every hook records framework, awareness level, source quote and open loop, and passes the loop test (§ 5.4); hook and loop structures are validated against competitor ads like angles; offer notes per angle (§ 5.5); results use the metric chain (§ 7).
+
 ## Step 1 – Competitor map
 
 From `01-ad-matrix.md` and `01-competitors.md`, write:

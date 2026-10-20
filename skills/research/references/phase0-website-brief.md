@@ -68,6 +68,8 @@ Record only what is on the page. For a missing item write `NOT FOUND ON PAGE`. I
 
 ---
 
+**Also extract (course-playbook.md § 1):** a means-end chain per feature, a plain-outcome line per spec, the funnel score (price, familiarity, complexity, visual impact, technical differentiation, 1-5 each), a premium-in-commodity flag, guarantee terms, the usage timeline, and the proof inventory by tier.
+
 ## 0.2 Research Brief → `00-brief.md`
 
 Rules:
