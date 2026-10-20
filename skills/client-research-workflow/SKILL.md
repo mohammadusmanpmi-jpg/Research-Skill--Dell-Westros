@@ -21,6 +21,8 @@ This is the house workflow that wraps the `research` skill. Read it before any r
   2. consolidate them,
   3. map the emotional drivers (DRIVE),
   4. generate angles and avatars.
+- A full run also starts with **the client's own ad account** (what already works is iterated before anything new is invented), the business context and an audit of the label, dose and offer (Phase 0B), adds a **science and authority** check for health products (the evidence ceiling and the claims we don't make), and ends with the client-facing **DRIVE Strategy Document** (Phase 4) and **Angle Exploration Document**.
+- Use Dell's terms in everything client-facing: **ICP** (each buyer type; 3 obvious + 3 underserved, plus parked segments), **Mechanism** (problem mechanism + solution mechanism), then **Angles** and **Hooks**.
 - The user may ask for one phase only. Run only that phase.
 
 ## 3. Everything comes from the target market
@@ -31,7 +33,7 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 - **TikTok is a standard source**, not an extra: TikTok Shop reviews (where the Shop is live in the market), comments on videos and competitor ads, local creator content, and TikTok ads, all in the market's country and language (`research` skill, tiktok-and-trends.md § A).
 - **Every research run includes a trend scan** of the market: Google Trends for that country, TikTok trending hashtags and sounds, local news and local marketplaces. Each trend is checked against competitor ads and flagged UNRIDDEN / EARLY RIDERS / RIDDEN; lead with trends competitors aren't riding yet (tiktok-and-trends.md § B).
 - Every quote and every ad keeps its source link. No link, no record.
-- **Research is only done when it is deep enough and fully checked:** every source meets its minimum floor (e.g. Reddit 600 quotes from 120+ threads across 10+ subreddits; 2,000+ quotes across 6+ sources in total; see the `research` skill, phase1-collectors.md § Minimum depth), and **every** quote has been re-checked against its live link, not a sample. A source that can't reach its floor gets a logged shortfall, and the user is told before moving on.
+- **Research is only done when it is deep enough and fully checked:** every source meets its minimum floor (e.g. Reddit 600 quotes from 120+ threads across 10+ subreddits; 2,000+ quotes across 6+ sources and 15+ platforms in total, aiming for 25-30 platforms including health forums for health products; see the `research` skill, phase1-collectors.md § Minimum depth), and **every** quote has been re-checked against its live link, not a sample. A source that can't reach its floor gets a logged shortfall, and the user is told before moving on.
 
 ## 4. Check existing research first
 
@@ -50,6 +52,7 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 - Assume competitors already test the obvious angles. Validate every angle against their ads (OPEN / EMERGING / PROVEN / CROWDED / ABANDONED / NOT VALIDATED) and lead with OPEN and EMERGING angles and with avatars competitors do not address.
 - Every angle and avatar is backed by verbatim quotes and source links from the market.
 - Angles competitors already run are not dropped: give a take-over plan (new mechanism, new avatar, new proof, sharper words).
+- In the Angle Exploration Document, every competitor-run angle gets a takeover card: **"This angle is currently running from [competitor]"** with their exact copy, ad link, days running and who they target, then **"Here's how we dominate it"**: what we adopt, what we improve, and our ICP, mechanism, proof, format and hooks. Our mechanism and hook wording is checked against competitor phrasing (`mechanism_check.py`) so we never echo them.
 
 ## 7. Optional weekly trend scan
 

@@ -9,6 +9,8 @@ Assume competitors do research too. Any angle that is obvious from customer data
 
 Inputs: `02-consolidation.md` (required), `01-ad-matrix.md` + `01-ads.jsonl` + `01-ad-searches.md` (required for validation; if missing, every angle is flagged `NOT VALIDATED – no ad data` and the user is told to run the Ads collector), `01-competitors.md`, `02-drive.md`, `definitions.md`, `03-results.md` if present.
 
+Client-facing output: after Steps 1-8, write `03-angle-exploration.md` from `angle-exploration-template.md`. It must open the angle library with a **competitor takeover** section: for every angle a competitor runs now, "This angle is currently running from [competitor]" (exact copy, ad link, days running, who they target), then "Here's how we dominate it" (adopt what is proven, improve it: our ICP, mechanism, proof, format, hooks). Then the open angles, then the trend angles.
+
 Course additions: read course-playbook.md § 5 before this phase. Every angle cites its research insight and fills the extra angle-card fields (§ 5.1); avatars use the persona split (§ 5.2); test batches pass the creative diversity check (§ 5.3); every hook records framework, awareness level, source quote and open loop, and passes the loop test (§ 5.4); hook and loop structures are validated against competitor ads like angles; offer notes per angle (§ 5.5); results use the metric chain (§ 7).
 
 ## Step 1 – Competitor map
@@ -36,6 +38,8 @@ For each OPEN / UNDER-SERVED avatar, write a short avatar card: who, situation, 
 Also scan the angle × avatar grid: an angle that is CROWDED for one avatar but empty for another is a ready-made opening (same proven angle, new person).
 
 ## Step 3 – Angle pool with validation flags
+
+**Start with the client's own account.** If `00-account.md` exists, every client ad marked PROVEN ON ACCOUNT becomes the first candidate angle, flagged `PROVEN ON ACCOUNT`, and is iterated first (new hooks, new ICP, new format on the same proven angle) before new angles are invented. Ads under "tested and stopped" are not resold as new angles.
 
 Build 12-20 candidate angles from: DOMINANT/HIGH pains, scenes, triggers; failed solutions with cost/duration; DRIVE reframe chains; verified or plausible mechanisms; identity statements; "this actually works" moments; gift patterns; open avatars from Step 2; UNRIDDEN and EARLY RIDERS trends from `01-trends.md` that link to VOC (keep their trend evidence and act-by window); TikTok-native angles from `01-tiktok.md`.
 
@@ -82,6 +86,16 @@ Example of the pattern (illustrative only; real output must cite the research):
 
 Unique mechanism rules: it must be true (verified or plausible in consolidation 11B, compliance-checked), it must explain *why* the problem happens or *why* past solutions failed, and its name or phrasing must not match any mechanism in Step 1's list.
 
+## Step 4b – Mechanism distinctness check
+
+Put every mechanism line from Step 4 and every candidate hook in `ours.txt` (one per line) and run:
+
+```
+python scripts/mechanism_check.py research/<brand>/01-ads.jsonl ours.txt > research/<brand>/03-mechanism-check.md
+```
+
+Reword every REWORD line, then read the OK lines next to their closest competitor match for structural echoes (e.g. "warms from the outside" vs "warming the outside"). Rerun until 0 lines are flagged. A mechanism that sounds like a competitor's hands them the credit.
+
 ## Step 5 – Angle briefs (top 10 after validation)
 
 ```
@@ -98,6 +112,8 @@ Scores (1-5): VOC demand · emotional charge · provability · differentiation v
 Total
 ```
 
+Angle card fields for the client-facing documents (DRIVE Strategy and Angle Exploration): ICP · sophistication stage · driver (LF8) · formats · basis (a verbatim quote of 15 words or fewer + URL) · 3 hooks · mechanism anchor · proof beats · CTA frame · production notes.
+
 Rank by total. VOC demand and differentiation weigh most; a validated OPEN angle with weak demand should not outrank a PROVEN angle with a strong take-over lever.
 
 ## Step 6 – Hooks and openings (top 8)
@@ -107,6 +123,8 @@ Per angle: 5 hooks (different hook types, <15 words, built from verbatim custome
 ## Step 7 – Test plan
 
 | Rank | Angle | Flag | Avatar | First hook | Format | What must be true to win | Kill criteria |
+
+Budget split for the test plan: about **60%** iterating proven angles (the client's PROVEN ON ACCOUNT ads and takeovers of competitor PROVEN angles), **30%** OPEN / EMERGING angles and new ICPs, **10%** wild cards (TEST-lane angles, UNRIDDEN trends).
 
 Batches of 3-4; each batch mixes at least one OPEN/EMERGING angle with one take-over of a PROVEN angle, and at least two avatars, so every batch teaches something. Ask the user for their account benchmarks (hook rate, CTR, CPA) for kill criteria if unknown.
 

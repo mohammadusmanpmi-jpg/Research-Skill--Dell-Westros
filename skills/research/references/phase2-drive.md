@@ -10,6 +10,12 @@ Course additions: read course-playbook.md § 4 before this phase. In short:
 - S9-S12 and S17: mechanism of the problem + mechanism of the solution, the six-point mechanism test, a blocking-belief type, the category reframe paragraph and the positioning mode (§ 4.4-4.5).
 - S13: pick a story arc per segment (§ 4.7).
 
+Terms (as in Dell's DRIVE Strategy documents):
+- **ICP** = each buyer type. Build **3 obvious + 3 underserved** ICPs, plus a **parked segments** table (segment, why parked, what would unpark it). Each ICP card has 8 fields: trigger event, mental state, what they've tried, awareness stage, sophistication stage, dominant LF8 desire, the belief blocking the sale, and the emotional doorway. Every field cites quotes and counts. The S7 avatar work feeds these cards; in client-facing output, call them ICPs, not a separate avatar layer.
+- **Mechanism** = the **problem mechanism** (why it happens, why past fixes failed) + the **solution mechanism** (why this product works), each kept under the evidence ceiling in `01-science.md`.
+- Start from the client's own proven ads in `00-account.md` when it exists: what already works on the account sets the starting angle and ICP.
+- The client-facing write-up of this phase is the Phase 4 DRIVE Strategy Document (`drive-strategy-template.md`).
+
 ## 2.1 Discover – desire and sophistication
 
 **S1 Life Force 8 audit** – for each of the 8 desires (definitions.md): means-end chain from product to desire; score 1-5 on emotional charge, white space (vs `01-ads.md`), product credibility; cite data.

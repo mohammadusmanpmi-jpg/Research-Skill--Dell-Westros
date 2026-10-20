@@ -6,7 +6,7 @@ Claude Code skills for product and competitor research for ad creative, one proj
 
 | Path | What it is |
 |---|---|
-| `skills/research/` | The `/research` skill: website brief, voice-of-customer collection, competitor ads (TrendTrack or Meta Ad Library), consolidation, DRIVE strategy, angle and avatar exploration with competitor validation. Includes reference files and two scripts (`count_quotes.py`, `ad_matrix.py`). |
+| `skills/research/` | The `/research` skill: website brief, voice-of-customer collection, competitor ads (TrendTrack or Meta Ad Library), consolidation, DRIVE strategy, angle and avatar exploration with competitor validation. Includes reference files and two scripts (`count_quotes.py`, `ad_matrix.py`). Also: the client's own ad account and offer audit (Phase 0B), TikTok and trend scan, science and claim guardrails, the DRIVE Strategy Document (Phase 4) and the Angle Exploration Document with competitor takeover cards ("This angle is currently running from [competitor]" → "Here's how we dominate it"), plus `verify_quotes.py`, `depth_check.py` and `mechanism_check.py`. |
 | `skills/client-research-workflow/` | The house workflow around it: one project per client, local-market sources only, reuse existing research, prioritise angles competitors have not used, optional weekly trend scan. |
 | `CLAUDE.md` | Default instructions that make the skills the standard way to research in any folder. |
 

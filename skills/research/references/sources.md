@@ -74,3 +74,17 @@ Access: **open** = reachable without login from a cloud session; **partial** = s
 - Google Trends – https://trends.google.com/trends/explore?geo=<CC>&hl=<lang> – open (partial; use browser if blocked)
 - Google News – https://news.google.com (choose the market's country edition and language) – open
 - Amazon Movers & Shakers – https://www.amazon.<market domain>/gp/movers-and-shakers – partial
+
+## Health communities (open; use for any health, supplement or condition product)
+Search each with the brief's condition and product queries. Each site counts as its own platform for the depth floor.
+- Mayo Clinic Connect – https://connect.mayoclinic.org
+- Drugs.com reviews and Q&A – https://www.drugs.com (condition and drug review pages; interaction checker https://www.drugs.com/drug_interactions.html)
+- HealthUnlocked – https://healthunlocked.com
+- WebMD reviews and community – https://www.webmd.com
+- Inspire – https://www.inspire.com
+- MedHelp – https://www.medhelp.org
+- patient.info forums – https://patient.info/forums
+- HealingWell – https://www.healingwell.com/community
+- Beyond Blue forums (AU, mental health) – https://forums.beyondblue.org.au
+- Condition and audience forums, e.g. ExcelMale – https://www.excelmale.com · Mojo – https://www.mojo.health (community) · Longecity – https://www.longecity.org
+- Science and safety (for science-collector.md): NIH ODS – https://ods.od.nih.gov · MedlinePlus herbs – https://medlineplus.gov/druginfo/herb_All.html · LiverTox – https://www.ncbi.nlm.nih.gov/books/NBK547852 · NCCIH – https://www.nccih.nih.gov · PubMed – https://pubmed.ncbi.nlm.nih.gov · Cochrane – https://www.cochranelibrary.com

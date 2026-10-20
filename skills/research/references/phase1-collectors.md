@@ -19,7 +19,9 @@ A source is not finished until it meets **both** its floor and saturation (the l
 | `facebook` | 200 (browser) | 10 groups | Top posts per search term, all comments |
 | `instagram` | 100 (browser) | 20 posts with 50+ comments | |
 | `x` | 100 (browser) | Top 20 by engagement per query | Reply chains on 10+ replies |
-| **All sources** | **2,000** | **6+ sources** | 70%+ from the target market |
+| **All sources** | **2,000** | **6+ sources, and 15+ distinct platforms (aim for 25-30)** | 70%+ from the target market |
+
+**Platforms:** a *platform* is one website or app (reddit.com, mayoclinic.org Connect, drugs.com reviews, healthunlocked.com, a niche forum, a retailer's reviews). The Element Vital DRIVE Strategy drew 1,869 excerpts from 31 platforms; match that breadth. Health and condition products must include the health communities in `sources.md` § Health communities. Record the site in a `platform` field (e.g. `"platform":"drugs.com"`); `depth_check.py` falls back to the URL's domain.
 
 **Competitor ads:** 100+ ads from 8+ advertisers, 30+ of them running 30+ days, and every angle searched with 3+ keyword variants in the market country.
 **Trend scan:** 20+ Google Trends terms, 15+ TikTok hashtags or sounds, 5+ local news outlets, 3+ marketplaces, and 10+ trends recorded with evidence.
@@ -33,7 +35,7 @@ Small niches: if a floor can't be met after every query, subreddit, forum and pa
  "author":"u/…","role":"op|commenter|reviewer|answerer","engagement":142,
  "quote":"verbatim text, spelling untouched",
  "tags":["PAIN","SCENE"],"theme":"cant-sleep-on-side","segment":"self-buyer-45plus",
- "brand":null,"sentiment":null,"credential":null,"cost":null,"duration":null}
+ "brand":null,"sentiment":null,"credential":null,"cost":null,"duration":null,"platform":"reddit.com"}
 ```
 
 Fields:
@@ -61,7 +63,7 @@ Use `https://old.reddit.com/r/<sub>/search?q=<query>&restrict_sr=on&sort=top&t=a
 Summary lists: top 10 pain phrases, top 10 failed solutions, top 10 scenes, top 5 triggers, beliefs, villains, blocking beliefs, trust authorities, identity statements, safety concerns, product experiences (pos/neg/mixed), unexpected.
 
 ## Forums (open)
-Use the forum URLs in the brief; search with the forum queries. Top 10-20 threads by reply count per query. Read all pages. Note poster's post count and date. Target 150.
+Use the forum URLs in the brief; search with the forum queries. For health and condition products, also search every health community in `sources.md` § Health communities (Mayo Clinic Connect, Drugs.com reviews, HealthUnlocked, WebMD reviews, Inspire, MedHelp, patient.info, HealingWell and the condition's own forums such as ExcelMale, Mojo or Longecity); each one counts as its own platform. Top 10-20 threads by reply count per query. Read all pages. Note poster's post count and date. Target 150.
 Summary: top 5 pain descriptions unique to forums, top 5 failed solutions with duration+cost, top 5 device experiences, top 5 entrenched beliefs, top 3 patterns absent from Reddit.
 
 ## Quora (partial – login usually needed for full answers; use browser if present)
@@ -86,6 +88,8 @@ Summary: full lists, 10 most revealing questions, 5 skepticism questions.
 
 ## Authority (open) → `01-authority.md`
 Google Scholar, PubMed, Cochrane with the brief's queries; last 5 years; systematic reviews > RCTs > observational. Per study: title, first author, year, journal, n, one-line finding, SUPPORTS / CONTRADICTS / INCONCLUSIVE for the brand's claims, DOI. Regulators: registration status, what claims are allowed. Publications: what the trusted outlets say.
+For health, supplement and condition products, run the full science and authority collector in `science-collector.md` (about 50 sources, the evidence ceiling per ingredient at the product's real dose, drug interactions, claim guardrails, what we don't claim) → `01-science.md`. This section stays as the minimum for every other category.
+
 Output: evidence summary per claim; mechanism validation (verified / plausible / unsupported); regulatory status; compliance boundaries (say with citation / soften to "users report" / cannot say); mechanism opportunities; recognised experts and trusted channels.
 
 ## TikTok and trends

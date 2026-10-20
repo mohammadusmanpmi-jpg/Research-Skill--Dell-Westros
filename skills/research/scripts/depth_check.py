@@ -5,7 +5,8 @@ Usage: python depth_check.py research/<brand>/01-quotes.jsonl [research/<brand>/
 
 Counts, per source: quotes, distinct threads/pages (distinct URLs without the
 comment anchor), distinct communities (`sub` field), the largest share of quotes
-coming from one thread, and the 2-3 star share for review sources. Compares
+coming from one thread, and the 2-3 star share for review sources. Also counts
+distinct platforms (the `platform` field, or the URL's domain). Compares
 each with the floors in phase1-collectors.md § Minimum depth and prints PASS /
 BELOW FLOOR. Also reports how many quotes are verified (`verified: true`, set by
 verify_quotes.py). Phase 1 is not done while any line says BELOW FLOOR without a
@@ -32,6 +33,7 @@ FLOORS = {
 }
 TOTAL_QUOTES = 2000
 MIN_SOURCES = 6
+MIN_PLATFORMS = 15  # distinct websites/apps; aim for 25-30
 MAX_THREAD_SHARE = 0.15
 MIN_LOW_STAR_SHARE = 0.40  # 2-3 star share for review sources
 REVIEW_SOURCES = {"amazon", "tiktok-shop"}
@@ -56,6 +58,13 @@ def load(path):
             except json.JSONDecodeError:
                 pass
     return out
+
+
+def platform(r):
+    if r.get("platform"):
+        return r["platform"].lower()
+    m = re.match(r"https?://(?:www\.|old\.|m\.)?([^/]+)", r["url"])
+    return m.group(1).lower() if m else "unknown"
 
 
 def status(ok):
@@ -100,6 +109,9 @@ def main(quotes_path, ads_path=None):
     p("")
     p(f"- Total quotes: {len(rows)} (floor {TOTAL_QUOTES}) – {status(len(rows) >= TOTAL_QUOTES)}")
     p(f"- Sources collected: {len(collected)} (floor {MIN_SOURCES}) – {status(len(collected) >= MIN_SOURCES)}")
+    plats = Counter(platform(r) for r in rows)
+    p(f"- Platforms (distinct websites/apps): {len(plats)} (floor {MIN_PLATFORMS}, aim 25-30) – {status(len(plats) >= MIN_PLATFORMS)}")
+    p("  - " + ", ".join(f"{k} {v}" for k, v in plats.most_common()))
     p(f"- No single thread may supply more than {MAX_THREAD_SHARE:.0%} of a source's quotes.")
     p(f"- Review sources need at least {MIN_LOW_STAR_SHARE:.0%} of rated quotes from 2-3 star reviews.")
 
