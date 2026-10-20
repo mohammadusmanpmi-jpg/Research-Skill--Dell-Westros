@@ -1,6 +1,8 @@
 # Phase 1.13 – Consolidation → `02-consolidation.md`
 
-Inputs: `01-counts.md` (computed), `01-quotes.jsonl`, every `01-<source>.md`, `01-authority.md`, `01-ads.md`, `01-verification.md`.
+Inputs: `01-counts.md` (computed), `01-quotes.jsonl`, every `01-<source>.md`, `01-authority.md`, `01-ads.md`, `01-verification.md`, `01-depth.md`.
+
+Only verified quotes (`verified: true`) are used. Do not start while `01-verification.md` shows unchecked quotes or `01-depth.md` shows a source below its floor without a shortfall the user approved.
 
 Frequency bands come from `01-counts.md`. Do not re-estimate them. Band definitions (mentions = records sharing a theme; sources = distinct `source` values):
 

@@ -2,6 +2,30 @@
 
 Each section is one source. Open-access sources can run as parallel subagents; give each subagent its section, the brief, the quote record format and the output paths. Browser-only sources run in the main session, one at a time.
 
+## Minimum depth (floors) – read before collecting
+
+A source is not finished until it meets **both** its floor and saturation (the last 50 quotes added fewer than 3 new themes). Floors count **verified** quotes from the **target market** (local language and country); US or other-market quotes are labelled and don't count toward the floor. Use these `source` names so `depth_check.py` can count them.
+
+| `source` | Min quotes | Min coverage | Other rules |
+|---|---|---|---|
+| `reddit` | 600 | 120 threads across 10+ subreddits (include the market's own country/city subs) | Read 40+ threads in full (all comments, 2-3 reply levels); no thread over 15% of quotes |
+| `forums` | 250 | 60 threads across 6+ forums, local-language forums first | Read every page of each thread |
+| `quora` | 150 | 30 questions | All answers and comments |
+| `amazon` | 250 | 8 listings (own + competitors) on the market's Amazon domain; 400+ reviews read | 40%+ of quotes from 2-3 star reviews; Q&A section on every listing |
+| `complaints` | 100 (if that many exist) | Brand + top 5 competitors on every complaint site for the market | Read all 1-3 star entries |
+| `youtube` | 250 | 25 videos | Top 50 comments each, 2-3 reply levels |
+| `tiktok-comments` | 300 | 40 videos with 50+ comments (organic + competitor ads + creators) | Top 30 comments each |
+| `tiktok-shop` | 150 (where the Shop is live) | 8 listings | 40%+ from 2-3 star reviews |
+| `facebook` | 200 (browser) | 10 groups | Top posts per search term, all comments |
+| `instagram` | 100 (browser) | 20 posts with 50+ comments | |
+| `x` | 100 (browser) | Top 20 by engagement per query | Reply chains on 10+ replies |
+| **All sources** | **2,000** | **6+ sources** | 70%+ from the target market |
+
+**Competitor ads:** 100+ ads from 8+ advertisers, 30+ of them running 30+ days, and every angle searched with 3+ keyword variants in the market country.
+**Trend scan:** 20+ Google Trends terms, 15+ TikTok hashtags or sounds, 5+ local news outlets, 3+ marketplaces, and 10+ trends recorded with evidence.
+
+Small niches: if a floor can't be met after every query, subreddit, forum and page route has been tried, log each route with its hit count in the source summary as a **SHORTFALL** and tell the user the real number. Never call the research done on a silent shortfall, and never pad.
+
 ## Quote record format (`01-quotes.jsonl`, one JSON object per line)
 
 ```json
@@ -25,7 +49,7 @@ Rules that apply to every collector:
 - Verbatim. No paraphrase, no spelling fixes, no truncation mid-thought.
 - No URL → do not record.
 - Recency: prefer the last 36 months; always record the date.
-- Targets are targets. If a source blocks, rate-limits or is thin, stop and write the shortfall note in the per-source summary: what was searched, how many pages read, what blocked.
+- Targets are floors (§ Minimum depth). If a source blocks, rate-limits or is thin, try every other route first (more queries, more subs, the browser, page 2+), then write the shortfall note in the per-source summary: what was searched, how many pages read, what blocked.
 - Read reply chains, not just top posts. Page 2+ of forum threads, 2-3 levels of replies on Reddit/YouTube.
 
 Per-source summary (`01-<source>.md`): record counts (quotes, threads/pages read), the frequency lists requested in that section, shortfall note, and "unexpected findings" with quotes.
@@ -33,7 +57,7 @@ Per-source summary (`01-<source>.md`): record counts (quotes, threads/pages read
 ---
 
 ## Reddit (open)
-Use `https://old.reddit.com/r/<sub>/search?q=<query>&restrict_sr=on&sort=top&t=all` or append `.json` to thread URLs for comments. Run every query from the brief in every listed subreddit; also run the top 10 condition queries site-wide. Top 10 threads per query cluster per sub. Target 300 quotes.
+Use `https://old.reddit.com/r/<sub>/search?q=<query>&restrict_sr=on&sort=top&t=all` or append `.json` to thread URLs for comments. Run every query from the brief in every listed subreddit; also run the top 10 condition queries site-wide. Top 10 threads per query cluster per sub. Target 300 quotes (floor 600 verified, 120 threads, 10+ subreddits – see § Minimum depth).
 Summary lists: top 10 pain phrases, top 10 failed solutions, top 10 scenes, top 5 triggers, beliefs, villains, blocking beliefs, trust authorities, identity statements, safety concerns, product experiences (pos/neg/mixed), unexpected.
 
 ## Forums (open)
@@ -128,5 +152,6 @@ Read course-playbook.md § 2 before collecting:
 ## After all collectors
 
 1. `python scripts/count_quotes.py research/<brand>/01-quotes.jsonl > research/<brand>/01-counts.md`
-2. Verification: sample 10% of records (min 10, spread across sources), reopen each URL, confirm the quote text appears. Remove failures from the jsonl, rerun the count, write `01-verification.md` (sampled, passed, removed, by source).
+2. Verification of **every** record: `python scripts/verify_quotes.py research/<brand>/01-quotes.jsonl > research/<brand>/01-verification.md`. It reopens each URL and confirms the quote text appears. Remove every "not found" record from the jsonl (or fix its URL if the quote is real). Re-check every "unreachable" record in the browser and set `verified` by hand, or remove it. Rerun with `--only-unchecked` until nothing is left unchecked, then rerun the count.
+   Depth: `python scripts/depth_check.py research/<brand>/01-quotes.jsonl research/<brand>/01-ads.jsonl > research/<brand>/01-depth.md`. Any BELOW FLOOR line → keep collecting, or log the shortfall and ask the user.
 3. Proceed to `phase1-consolidation.md`.

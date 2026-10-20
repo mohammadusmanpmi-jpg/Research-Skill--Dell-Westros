@@ -25,7 +25,7 @@ First check whether **TikTok Shop is live in the market**. If it isn't, skip A.2
 - **Search the Shop** for the category, for each competitor product, and for "<category> + dupe / alternative".
 - **For each listing record:** product, seller, price, units sold (if shown), rating and review count.
 - **Reviews:** read 2-3 star reviews first, then 4, then 1-star after removing logistics complaints. This is the same weighting as course-playbook § 2.2.
-- **Target:** 50-100 reviews across the top 5-8 listings.
+- **Target:** 50-100 reviews across the top 5-8 listings (floor 150 verified quotes from 8 listings; see phase1-collectors.md § Minimum depth).
 - **Tags and fields:** PRODUCT EXPERIENCE, plus `rating` (1-5) and `source: "tiktok-shop"`.
 - **Why it matters:** these are impulse buyers, so watch for expectation gaps ("looked different in the video") and "TikTok made me buy it" regret or delight.
 

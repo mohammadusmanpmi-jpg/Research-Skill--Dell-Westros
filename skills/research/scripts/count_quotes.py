@@ -29,7 +29,8 @@ def band(mentions, sources):
 
 
 def norm(text):
-    return re.sub(r"[^a-z0-9 ]", "", text.lower()).strip()[:160]
+    # Unicode-aware so non-English quotes (the target market's language) are not collapsed together.
+    return re.sub(r"[^\w ]", "", text.lower(), flags=re.UNICODE).strip()[:160]
 
 
 def load(path):

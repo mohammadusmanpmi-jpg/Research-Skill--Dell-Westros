@@ -31,6 +31,7 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 - **TikTok is a standard source**, not an extra: TikTok Shop reviews (where the Shop is live in the market), comments on videos and competitor ads, local creator content, and TikTok ads, all in the market's country and language (`research` skill, tiktok-and-trends.md § A).
 - **Every research run includes a trend scan** of the market: Google Trends for that country, TikTok trending hashtags and sounds, local news and local marketplaces. Each trend is checked against competitor ads and flagged UNRIDDEN / EARLY RIDERS / RIDDEN; lead with trends competitors aren't riding yet (tiktok-and-trends.md § B).
 - Every quote and every ad keeps its source link. No link, no record.
+- **Research is only done when it is deep enough and fully checked:** every source meets its minimum floor (e.g. Reddit 600 quotes from 120+ threads across 10+ subreddits; 2,000+ quotes across 6+ sources in total; see the `research` skill, phase1-collectors.md § Minimum depth), and **every** quote has been re-checked against its live link, not a sample. A source that can't reach its floor gets a logged shortfall, and the user is told before moving on.
 
 ## 4. Check existing research first
 
