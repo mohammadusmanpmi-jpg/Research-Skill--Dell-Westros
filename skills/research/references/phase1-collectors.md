@@ -64,6 +64,9 @@ Summary: full lists, 10 most revealing questions, 5 skepticism questions.
 Google Scholar, PubMed, Cochrane with the brief's queries; last 5 years; systematic reviews > RCTs > observational. Per study: title, first author, year, journal, n, one-line finding, SUPPORTS / CONTRADICTS / INCONCLUSIVE for the brand's claims, DOI. Regulators: registration status, what claims are allowed. Publications: what the trusted outlets say.
 Output: evidence summary per claim; mechanism validation (verified / plausible / unsupported); regulatory status; compliance boundaries (say with citation / soften to "users report" / cannot say); mechanism opportunities; recognised experts and trusted channels.
 
+## TikTok and trends
+Full TikTok collector (Shop reviews, video comments, creator content, TikTok ads) and the market trend scan: see `tiktok-and-trends.md`. It replaces the short TikTok line below when TrendTrack or the browser is available; the line below stays as the minimum.
+
 ## Social – Facebook Groups, TikTok, Instagram, X (browser only)
 Only with Claude in Chrome. One source at a time, ~40 page loads max per source per run, pause between actions. Ask the user to allow each site when prompted.
 - Facebook: group search terms from the brief; 10-20 largest active groups; inside each, search category term, condition, competitors, and the emotional / burden / social / money / professional / identity / drastic-action keywords. Top 10-15 posts per term, all comments. Extra tags: CONFESSION, PARTNER/SOCIAL CONFLICT. Target 100.

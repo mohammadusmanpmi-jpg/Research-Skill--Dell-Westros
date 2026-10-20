@@ -141,6 +141,8 @@ Review platforms with URLs
 
 ### FACEBOOK GROUPS – search terms (10)          [browser only]
 ### TIKTOK – queries (12, 2-4 words) + hashtags (10)   [browser only]
+### TIKTOK SHOP – is it live in the market? product searches (8), competitor listings, local creator handles (8)  [TrendTrack or browser]
+### TRENDS – Google Trends terms (10, market language, geo = market), TikTok hashtags/sounds to watch (10), local news outlets (5) and marketplaces (3)
 ### INSTAGRAM – competitor handles (6) + hashtags (8)  [browser only]
 ### TWITTER/X – queries (10-14)                        [browser only]
 

@@ -28,6 +28,8 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 - Sources must be local to the market: local-language forums, review sites, marketplaces, media, search trends and competitor ads **in that country**. Reddit and US sources are allowed only as a supplement, never as the base.
 - Search in the market's language. Quote verbatim in the original language, with a short English gloss if the user needs it.
 - Competitor ads: use TrendTrack when it is connected, filtered to the market's country; otherwise the Meta Ad Library for that country.
+- **TikTok is a standard source**, not an extra: TikTok Shop reviews (where the Shop is live in the market), comments on videos and competitor ads, local creator content, and TikTok ads, all in the market's country and language (`research` skill, tiktok-and-trends.md § A).
+- **Every research run includes a trend scan** of the market: Google Trends for that country, TikTok trending hashtags and sounds, local news and local marketplaces. Each trend is checked against competitor ads and flagged UNRIDDEN / EARLY RIDERS / RIDDEN; lead with trends competitors aren't riding yet (tiktok-and-trends.md § B).
 - Every quote and every ad keeps its source link. No link, no record.
 
 ## 4. Check existing research first
@@ -51,6 +53,7 @@ This is the house workflow that wraps the `research` skill. Read it before any r
 ## 7. Optional weekly trend scan
 
 - If the client wants it, set up a weekly routine that only spots **new trends in the target market**: new competitor ads, new products, rising search terms, new complaints in local forums.
+- Run it with the trend scan procedure (tiktok-and-trends.md § B): Google Trends for the country, TikTok Creative Center trends and new TikTok creatives, local news, local marketplace movers, TrendTrack `daily_radar` for tracked competitors. Report only what changed since the last scan, with each trend's UNRIDDEN / EARLY RIDERS / RIDDEN flag.
 - The scan reports what is new since last week with links. It does not re-run the full research and does not generate angles unless asked.
 - Save each scan as `Trend Scan - <YYYY-MM-DD>.md` in the client's research folder (ask before creating it, per section 5).
 

@@ -66,3 +66,11 @@ Access: **open** = reachable without login from a cloud session; **partial** = s
 - Meta Ad Library – https://www.facebook.com/ads/library – browser
 - Atria – https://www.atriaapp.com · Get Hooked – https://www.gethooked.io · Daily Virals – https://www.dailyvirals.com – browser, paid
 - LP Pagedex – https://lppaged.com – landing page reference
+
+## TikTok and trends (see tiktok-and-trends.md)
+- TikTok Shop – in the TikTok app / tiktok.com/shop (only in markets where the Shop is live) – browser
+- TikTok Creative Center – https://ads.tiktok.com/business/creativecenter – trending hashtags, songs, creators, top ads, top products by country – partial (some views need login)
+- TrendTrack `search_tiktok_library` – TikTok ads and organic videos by country/language – MCP, 1 credit per item
+- Google Trends – https://trends.google.com/trends/explore?geo=<CC>&hl=<lang> – open (partial; use browser if blocked)
+- Google News – https://news.google.com (choose the market's country edition and language) – open
+- Amazon Movers & Shakers – https://www.amazon.<market domain>/gp/movers-and-shakers – partial

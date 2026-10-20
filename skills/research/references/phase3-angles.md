@@ -37,7 +37,7 @@ Also scan the angle × avatar grid: an angle that is CROWDED for one avatar but 
 
 ## Step 3 – Angle pool with validation flags
 
-Build 12-20 candidate angles from: DOMINANT/HIGH pains, scenes, triggers; failed solutions with cost/duration; DRIVE reframe chains; verified or plausible mechanisms; identity statements; "this actually works" moments; gift patterns; open avatars from Step 2.
+Build 12-20 candidate angles from: DOMINANT/HIGH pains, scenes, triggers; failed solutions with cost/duration; DRIVE reframe chains; verified or plausible mechanisms; identity statements; "this actually works" moments; gift patterns; open avatars from Step 2; UNRIDDEN and EARLY RIDERS trends from `01-trends.md` that link to VOC (keep their trend evidence and act-by window); TikTok-native angles from `01-tiktok.md`.
 
 For each angle, validate:
 1. Map it to an angle slug in `01-ad-matrix.md`. If no slug fits, run new searches (TrendTrack, then Meta Ad Library) with 3-5 keyword variants of the angle, active **and** inactive ads, market country and US. Append the searches and hit counts to `01-ad-searches.md` and add any ads found to `01-ads.jsonl`, then rerun `ad_matrix.py`.
